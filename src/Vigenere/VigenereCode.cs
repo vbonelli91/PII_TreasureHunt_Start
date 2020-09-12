@@ -58,7 +58,7 @@ namespace Vigenere.Library
         private string RevertShift(int shift, string charToShift)
         {
             int totalShift = GetLetterNumber(charToShift) - shift + fullAlphabet.Length;
-            char result = fullAlphabet[(totalShift % fullAlphabet.Length)];
+            char result = fullAlphabet[ totalShift % fullAlphabet.Length];
             return result.ToString();
         }
         /// <summary>
